@@ -103,7 +103,24 @@ header nav {
   pointer-events: none;
 }
 
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid var(--border-hover);
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
 .hero-badge {
+  text-decoration: none;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -327,5 +344,6 @@ h1 {
 
 @media (max-width: 640px) {
   .hero { padding: 60px 0 48px; }
+  .hero-layout { flex-direction: column; align-items: flex-start; gap: 24px; }
   .projects-grid { grid-template-columns: 1fr; }
 }

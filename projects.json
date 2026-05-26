@@ -15,7 +15,7 @@
       "name": "Paddock",
       "description": "Car modification tracker and garage management app with a full-stack backend API and mobile client.",
       "tech": ["Flutter", "Dart", "Spring Boot", "gRPC", "PostgreSQL", "Java", "DigitalOcean"],
-      "github": "https://github.com/ryon137/paddock",
+      "github": null,
       "status": "in-progress",
       "featured": true,
       "lastUpdated": "2026-05-25"
@@ -23,8 +23,8 @@
     {
       "id": "homelab",
       "name": "Home Lab",
-      "description": "Self-hosted infrastructure running Nextcloud, Jellyfin, Immich, Vaultwarden, and local LLM inference across a Linux server and MacBook.",
-      "tech": ["Docker", "Traefik", "Ubuntu", "Ollama", "Nextcloud", "Jellyfin", "Immich", "Let's Encrypt"],
+      "description": "Self-hosted infrastructure running Nextcloud, Jellyfin, Immich, and Vaultwarden across a Linux server and MacBook, exposed via Traefik reverse proxy.",
+      "tech": ["Docker", "Traefik", "Ubuntu", "Nextcloud", "Jellyfin", "Immich", "Let's Encrypt"],
       "github": null,
       "status": "active",
       "featured": false,
