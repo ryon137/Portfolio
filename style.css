@@ -110,8 +110,8 @@ header nav {
 }
 
 .hero-avatar {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 2px solid var(--border-hover);
   flex-shrink: 0;
