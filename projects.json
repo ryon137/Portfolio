@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": "glassesai",
+      "name": "GlassesAI",
+      "description": "Self-hosted AI voice assistant for Ray-Ban smart glasses. Replaces Meta AI with a fully local pipeline — no cloud, no Meta account required.",
+      "tech": ["Android", "Kotlin", "Python", "Vosk", "faster-whisper", "Mistral 7B", "Kokoro TTS", "Bluetooth SCO"],
+      "github": "https://github.com/ryon137/GlassesAI",
+      "status": "in-progress",
+      "featured": true,
+      "lastUpdated": "2026-05-25"
+    },
+    {
+      "id": "paddock",
+      "name": "Paddock",
+      "description": "Car modification tracker and garage management app with a full-stack backend API and mobile client.",
+      "tech": ["Flutter", "Dart", "Spring Boot", "gRPC", "PostgreSQL", "Java", "DigitalOcean"],
+      "github": "https://github.com/ryon137/paddock",
+      "status": "in-progress",
+      "featured": true,
+      "lastUpdated": "2026-05-25"
+    },
+    {
+      "id": "homelab",
+      "name": "Home Lab",
+      "description": "Self-hosted infrastructure running Nextcloud, Jellyfin, Immich, Vaultwarden, and local LLM inference across a Linux server and MacBook.",
+      "tech": ["Docker", "Traefik", "Ubuntu", "Ollama", "Nextcloud", "Jellyfin", "Immich", "Let's Encrypt"],
+      "github": null,
+      "status": "active",
+      "featured": false,
+      "lastUpdated": "2026-05-25"
+    }
+  ]
+}
