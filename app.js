@@ -58,4 +58,39 @@ document.addEventListener('mousemove', (e) => {
   });
 });
 
+// ── Tech stack bubbles ────────────────────────────────────────────────────
+const TECHS = [
+  { label: 'Java',          tier: 1 }, { label: 'JavaScript',    tier: 1 },
+  { label: 'TypeScript',    tier: 1 }, { label: 'Python',        tier: 1 },
+  { label: 'Spring Boot',   tier: 1 }, { label: 'React',         tier: 1 },
+  { label: 'Node.js',       tier: 1 }, { label: 'Android',       tier: 1 },
+  { label: 'Docker',        tier: 1 }, { label: 'Kubernetes',    tier: 1 },
+  { label: 'AWS',           tier: 1 },
+  { label: 'Flutter',       tier: 2 }, { label: 'Kotlin',        tier: 2 },
+  { label: 'React Native',  tier: 2 }, { label: 'Angular',       tier: 2 },
+  { label: 'gRPC',          tier: 2 }, { label: 'PostgreSQL',    tier: 2 },
+  { label: 'SQL',           tier: 2 }, { label: 'Scala',         tier: 2 },
+  { label: 'GCP',           tier: 2 }, { label: 'CI/CD',         tier: 2 },
+  { label: 'Git',           tier: 2 }, { label: 'Dart',          tier: 2 },
+  { label: 'C++',           tier: 3 }, { label: 'Jenkins',       tier: 3 },
+  { label: 'Protobuf',      tier: 3 }, { label: 'OpenTelemetry', tier: 3 },
+  { label: 'Apigee',        tier: 3 }, { label: 'SonarQube',     tier: 3 },
+  { label: 'Postman',       tier: 3 }, { label: 'Traefik',       tier: 3 },
+  { label: 'HTML/CSS',      tier: 3 },
+];
+
+function initHeroStack() {
+  const stack = document.getElementById('hero-stack');
+  if (!stack) return;
+  TECHS.forEach(({ label, tier }, i) => {
+    const span = document.createElement('span');
+    span.textContent = label;
+    span.className = `tier-${tier}`;
+    span.style.setProperty('--float-dur',   `${(2.5 + (i % 7) * 0.25).toFixed(2)}s`);
+    span.style.setProperty('--float-delay', `-${((i * 0.41) % 4).toFixed(2)}s`);
+    stack.appendChild(span);
+  });
+}
+
 init();
+initHeroStack();
